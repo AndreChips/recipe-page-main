@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Outfit;
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: YoungSerif;
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+}
+.card-container {
+  background-color: white;
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.card-container img {
+  border-radius: 0.5rem;
+}
+
+.card-header h1 {
+  color: hsl(24, 5%, 18%);
+  font-family: YoungSerif, sans-serif;
+}
+
+.card-header p {
+  font-family: Outfit, sans-serif;
+}
+
+.card-preparation {
+  padding: 1rem;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 0.5rem;
+}
+
+.card-preparation h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-family: Outfit, sans-serif;
+  color: hsl(332, 51%, 32%);
+}
+
+.card-preparation ul {
+  margin: 0;
+  padding: 1rem 1rem 0 1rem;
+  font-family: Outfit, sans-serif;
+}
+
+.card-preparation ul li {
+  padding: 0.5rem 0 0 0;
+}
+
+.card-preparation ul li span {
+  margin: 0;
+}
+
+.card-ingredients h1 {
+  font-size: 1.5rem;
+  font-family: YoungSerif, sans-serif;
+  color: hsl(14, 45%, 36%);
+}
+
+.card-ingredients ul {
+  padding: 0 1rem 0 1rem;
+  font-family: Outfit, sans-serif;
+}
+
+.card-ingredients ul li {
+  padding: 0.5rem 0 0 0;
+}
+
+.card-ingredients ul li span {
+  margin: 0;
+}
+
+.card-instructions h1 {
+  font-size: 1.5rem;
+  font-family: YoungSerif, sans-serif;
+  color: hsl(14, 45%, 36%);
+}
+
+.card-instructions ol {
+  padding: 0 1rem 0 1rem;
+  font-family: Outfit, sans-serif;
+}
+
+.card-instructions ol li {
+  padding: 0.5rem 0 0 0;
+}
+
+.card-instructions ol li span {
+  margin: 0;
+}
+
+.card-nutrition h1 {
+  font-size: 1.5rem;
+  font-family: YoungSerif, sans-serif;
+  color: hsl(14, 45%, 36%);
+}
+
+.card-nutrition p {
+  font-family: Outfit, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Outfit, sans-serif;
+  font-size: 0.8rem;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+td:last-child {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .card-container {
+    width: 100%;
+    border-radius: 0;
+  }
+}
